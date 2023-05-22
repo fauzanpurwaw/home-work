@@ -103,8 +103,8 @@ export default {
             } else {
                 this.subtotal = 0;
                 this.diskon = 0;
-                this.potongan =this.diskon / 100 * hargaTotal;
-                this.total = hargaTotal - this.potongan;
+                this.potongan = 0;
+                this.total = 0;
             }
         },
     },
