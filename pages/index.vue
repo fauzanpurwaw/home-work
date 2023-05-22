@@ -16,13 +16,6 @@
               <p>Membuat diskon pembelian (JS)</p>
             </div>
           </NuxtLink>
-          <div class="card">
-            <div class="gambar w-full h-auto max-w-full">
-              <img src="" alt="">
-            </div>
-            <h2 class="text-lg">Day-8</h2>
-            <p>Membuat diskon pembelian (JS)</p>
-          </div>
         </div>
       </div>
     </div>

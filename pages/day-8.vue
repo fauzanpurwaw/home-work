@@ -100,6 +100,11 @@ export default {
                 this.diskon = 0;
                 this.potongan =this.diskon / 100 * hargaTotal;
                 this.total = hargaTotal - this.potongan;
+            } else {
+                hargaTotal = 0;
+                this.diskon = 5;
+                this.potongan =this.diskon / 100 * hargaTotal;
+                this.total = hargaTotal - this.potongan;
             }
         },
     },
