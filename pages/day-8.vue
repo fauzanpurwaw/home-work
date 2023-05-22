@@ -101,13 +101,8 @@ export default {
                 this.potongan =this.diskon / 100 * hargaTotal;
                 this.total = hargaTotal - this.potongan;
             } else {
-<<<<<<< HEAD
                 this.subtotal = 0;
-                this.diskon = 5;
-=======
-                hargaTotal = 0;
                 this.diskon = 0;
->>>>>>> ba217f4cd218203aba13d8987243653bd8882445
                 this.potongan =this.diskon / 100 * hargaTotal;
                 this.total = hargaTotal - this.potongan;
             }
