@@ -16,6 +16,15 @@
               <p>Membuat diskon pembelian (JS)</p>
             </div>
           </NuxtLink>
+          <NuxtLink to="day-9">
+            <div class="card">
+              <div class="gambar w-full h-auto max-w-full">
+                <img src="" alt="">
+              </div>
+              <h2 class="text-lg">Day-9</h2>
+              <p>Menampilkan Data JSON dalam UI</p>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
