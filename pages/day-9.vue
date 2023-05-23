@@ -1,20 +1,13 @@
 <template>
     <div class="container">
         <div class="content w-full h-full mx-auto">
-            <div class="content-day-9">
-                <div class="header">
-                    <h1 class="title">Tugas <span class="pt text-blue-300">Day-9</span></h1>
-                    <div class="deskripsi">
-                        <p>Disini adalah tugas <span class="pt text-slate-300">Menampilkan Data JSON dalam UI</span></p>
-                    </div>
+            <div class="content">
+                <h1 class="title">Home Work at <span class="pt text-blue-300">JUKe Soulutions</span></h1>
+                <div class="deskripsi">
+                    <p>Disini Tempat Tugas-tugas Harian saya saat Program BootCamp Front-End Developer di PT.JUKe Solutions.
+                    </p>
                 </div>
-                <div class="card-day-9">
-                    <h1 class="text-lg pt text-white">Tampilan Data</h1>
-                    <div class="flex flex-row gap-3 mt-5 w-full text-slate-300" ref="listSection">
-                        <div v-html="htmlString">
-
-                        </div>
-                    </div>
+                <div class="card-section" v-html="htmlString">
                 </div>
             </div>
         </div>
@@ -26,12 +19,12 @@ body {
 }
 
 .container {
+    height: 100vh;
     @apply mx-auto;
 }
 
-.content-day-9 {
-    height: 100vh;
-    @apply flex sm:flex-row flex-col justify-center items-center w-full p-5 gap-5;
+.content {
+    @apply flex flex-col justify-center w-full p-5;
 }
 
 .header {
@@ -55,8 +48,8 @@ body {
     @apply flex flex-wrap gap-5 sm:justify-normal justify-center w-full mt-28;
 }
 
-.card-day-8 {
-    @apply p-6 border border-green-500 rounded-lg bg-gray-800 text-slate-400 max-w-fit w-72 h-96 shadow-lg shadow-emerald-800;
+.card {
+    @apply mx-auto p-6 border border-green-500 rounded-lg bg-gray-800 text-slate-400 max-w-fit w-72 h-96 shadow-lg shadow-emerald-800;
     min-width: 18rem;
 }
 
@@ -129,6 +122,7 @@ export default {
         console.log(this.products.length)
 
         for (let a of this.products) {
+            this.htmlString += "<div class='card'>";
             this.htmlString += "<ol class='mt-3'>";
             this.htmlString += `<li>Name : ${a.name}</li>`;
             this.htmlString += `<li>Description : ${a.description}</li>`;
@@ -145,6 +139,7 @@ export default {
             this.htmlString += "</ol>";
             this.htmlString += "</li>";
             this.htmlString += "</ol>";
+            this.htmlString += "</div>";
         }
     }
 }
