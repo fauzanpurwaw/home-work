@@ -52,10 +52,6 @@ body {
     @apply mx-auto p-6 border border-green-500 rounded-lg bg-gray-800 text-slate-400 max-w-fit w-72 h-96 shadow-lg shadow-emerald-800;
     min-width: 18rem;
 }
-
-li {
-    list-style: disc;
-}
 </style>
 
 <script>
@@ -108,7 +104,7 @@ export default {
                     detail: {
                         comments: {
                             name: "@ramli_",
-                            comment: "barang Sangat bagus",
+                            comment: "barang Mantap",
                             date: "15-02-2023"
                         },
                         rating: 8.22,
@@ -126,13 +122,13 @@ export default {
             this.htmlString += "<ol class='mt-3'>";
             this.htmlString += `<li>Name : ${a.name}</li>`;
             this.htmlString += `<li>Description : ${a.description}</li>`;
-            this.htmlString += `<li>Qty : ${a.qty}</li>`;
+            this.htmlString += `<li class='mt-5'>Qty : ${a.qty}</li>`;
             this.htmlString += `<li>Price : ${a.price}</li>`;
             this.htmlString += `<li>Discount : ${a.discount}</li>`;
             this.htmlString += `<li>Rating : ${a.detail.rating}</li>`;
             this.htmlString += `<li>Sold : ${a.detail.sold}</li>`;
             this.htmlString += "<li>";
-            this.htmlString += "<ol class='ml-2'>";
+            this.htmlString += "<ol class='text-right mt-8'>";
             this.htmlString += `<li>Commentator : ${a.detail.comments.name}</li>`;
             this.htmlString += `<li>Comment : ${a.detail.comments.comment}</li>`;
             this.htmlString += `<li>Date : ${a.detail.comments.date}</li>`;
