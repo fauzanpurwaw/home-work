@@ -2,10 +2,9 @@
     <div class="container">
         <div class="content w-full h-full mx-auto">
             <div class="content">
-                <h1 class="title">Home Work at <span class="pt text-blue-300">JUKe Soulutions</span></h1>
+                <h1 class="title">Tugas <span class="pt text-blue-300">Day-9</span></h1>
                 <div class="deskripsi">
-                    <p>Disini Tempat Tugas-tugas Harian saya saat Program BootCamp Front-End Developer di PT.JUKe Solutions.
-                    </p>
+                    <p>Disini adalah tugas <span class="pt text-slate-300">Menampilkan Data JSON dalam UI</span></p>
                 </div>
                 <div class="card-section" v-html="htmlString">
                 </div>
