@@ -25,6 +25,16 @@
               <p>Menampilkan Data JSON dalam UI</p>
             </div>
           </NuxtLink>
+          <NuxtLink to="day-10">
+            <div class="card">
+              <div class="gambar w-full h-auto max-w-full">
+                <img src="" alt="">
+              </div>
+              <h2 class="text-lg">Day-10</h2>
+              <p>Membuat Function
+              </p>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -37,7 +47,7 @@ body {
 
 .container {
   height: 100vh;
-  @apply mx-auto ;
+  @apply mx-auto;
 }
 
 .content {
@@ -62,6 +72,7 @@ body {
 }
 
 .card {
-  @apply p-6 border border-green-500 rounded-lg bg-gray-800 text-slate-400 hover:bg-gray-900 hover:text-slate-300 max-w-fit w-72 h-96 shadow-lg shadow-emerald-800  hover:shadow-gray-900;
+  @apply p-6 border border-green-500 rounded-lg bg-gray-800 text-slate-400 hover:bg-gray-900 hover:text-slate-300 max-w-fit w-72 h-96 shadow-lg shadow-emerald-800 hover:shadow-gray-900;
   min-width: 18rem;
-}</style>
+}
+</style>
