@@ -44,7 +44,7 @@ body {
 }
 
 .card-section {
-    @apply flex flex-wrap gap-5 sm:justify-normal justify-center w-full mt-28;
+  @apply flex flex-wrap gap-5 sm:justify-normal justify-center w-full mt-28;
 }
 
 .card {
