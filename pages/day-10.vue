@@ -68,7 +68,38 @@
 
 <style>
 body {
-    @apply bg-gradient-to-r from-slate-900 from-20% via-slate-800 via-50% to-emerald-950 to-90% font-mono;
+  @apply bg-gradient-to-r from-slate-900 from-20% via-slate-800 via-50% to-emerald-950 to-90% font-mono;
+}
+
+.container {
+  height: 100vh;
+  @apply mx-auto;
+}
+
+.content {
+  @apply flex flex-col justify-center w-full p-5;
+}
+
+.title {
+  text-shadow: -2px 5px 10px rgb(0, 134, 45);
+  @apply text-5xl font-bold text-emerald-500;
+}
+
+.pt {
+  text-shadow: -2px 2px 10px rgb(1, 112, 177);
+}
+
+.deskripsi {
+  @apply p-3 text-slate-500;
+}
+
+.card-section {
+  @apply flex flex-wrap gap-5 sm:justify-normal justify-center w-full mt-28;
+}
+
+.card {
+  @apply p-6 border border-green-500 rounded-lg bg-gray-800 text-slate-400 hover:bg-gray-900 hover:text-slate-300 max-w-fit w-72 h-96 shadow-lg shadow-emerald-800 hover:shadow-gray-900;
+  min-width: 18rem;
 }
 </style>
 
