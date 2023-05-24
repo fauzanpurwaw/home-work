@@ -15,9 +15,10 @@
                         <p>sort array
                         </p>
                         <p class="mt-5" v-for="item in inputArray">
-                            {{"Name: " + item.name }} - {{ "Age : " + item.age }}
+                            {{ "Name: " + item.name }} - {{ "Age : " + item.age }}
                         </p>
-                        <button class="py-3 px-1 text-green-300 hover:text-emerald-600 float-right" @click="sortByNameAscending">Sort it!</button>
+                        <button class="py-3 px-1 text-green-300 hover:text-emerald-600 float-right"
+                            @click="sortByNameAscending">Sort it!</button>
                     </div>
                     <div class="card">
                         <div class="gambar w-full h-auto max-w-full">
@@ -101,7 +102,7 @@ body {
 }
 
 .card-section {
-  @apply flex flex-wrap gap-5 sm:justify-normal justify-center w-full mt-28;
+    @apply flex flex-wrap gap-5 sm:justify-normal justify-center w-full mt-28;
 }
 
 .card {
@@ -167,16 +168,12 @@ export default {
     },
     computed: {
         convertText() {
-            if (this.txtNo1 === "") {
-                this.convertedText = "Insert Text";
-            } else {
-                let words = this.txtNo1.split(' ');
-                let char = [];
-                for (let i = 0; i < words.length; i++) {
-                    char[i] = words[i].split('').join("@");
-                }
-                return char.join(" ");
+            let words = this.txtNo1.split(' ');
+            let char = [];
+            for (let i = 0; i < words.length; i++) {
+                char[i] = words[i].split('').join("@");
             }
+            return char.join(" ");
         }
     }
 }
