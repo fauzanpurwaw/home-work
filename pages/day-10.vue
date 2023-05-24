@@ -14,9 +14,10 @@
                         <h2 class="text-lg">No 1</h2>
                         <p>sort array
                         </p>
-                        <p class="mt-5" v-for="item in sortedArray">
+                        <p class="mt-5" v-for="item in inputArray">
                             {{"Name: " + item.name }} - {{ "Age : " + item.age }}
                         </p>
+                        <button class="py-3 px-1 text-green-300 hover:text-emerald-600 float-right" @click="sortByNameAscending">Sort it!</button>
                     </div>
                     <div class="card">
                         <div class="gambar w-full h-auto max-w-full">
@@ -123,7 +124,6 @@ export default {
                 { name: "John", age: 35 },
                 { name: "Alice", age: 28 }
             ],
-            sortedArray: [],
         }
     },
     methods: {
@@ -153,8 +153,8 @@ export default {
         clear() {
             this.number = [];
         },
-        sortByNameAscending(sortList) {
-            this.sortedArray = sortList.sort(function (a, b) {
+        sortByNameAscending() {
+            this.inputArray = this.inputArray.sort(function (a, b) {
                 if (a.name < b.name) {
                     return -1;
                 }
@@ -165,8 +165,5 @@ export default {
             });
         }
     },
-    mounted() {
-        this.sortByNameAscending(this.inputArray);
-    }
 }
 </script>
