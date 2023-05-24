@@ -29,7 +29,7 @@
                         </p>
                         <input class="w-full p-2 mt-5 text-emerald-950" type="text" id="no1" v-model="txtNo1">
                         <!-- <button class="py-3 px-1 text-green-300 hover:text-emerald-600" >click</button> -->
-                        <p class="mt-5 h-40 overflow-auto">{{ convertText }}</p>
+                        <p class="mt-5 h-48 overflow-auto">{{ convertText }}</p>
                     </div>
                     <div class="card">
                         <div class="gambar w-full h-auto max-w-full">
