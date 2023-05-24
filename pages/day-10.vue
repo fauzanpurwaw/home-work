@@ -27,8 +27,8 @@
                         <p>Insert Text :
                         </p>
                         <input class="w-full p-2 mt-5 text-emerald-950" type="text" id="no1" v-model="txtNo1">
-                        <button class="py-3 px-1 text-green-300 hover:text-emerald-600" @click="convertText">click</button>
-                        <p class="mt-5">{{ convertedText }}</p>
+                        <button class="py-3 px-1 text-green-300 hover:text-emerald-600" >click</button>
+                        <p class="mt-5">{{ convertText }}</p>
                     </div>
                     <div class="card">
                         <div class="gambar w-full h-auto max-w-full">
@@ -127,18 +127,18 @@ export default {
         }
     },
     methods: {
-        convertText() {
-            if (this.txtNo1 === "") {
-                this.convertedText = "Insert Text";
-            } else {
-                let words = this.txtNo1.split(' ');
-                let char = [];
-                for (let i = 0; i < words.length; i++) {
-                    char[i] = words[i].split('').join("@");
-                }
-                this.convertedText = char.join(" ");
-            }
-        },
+        // convertText() {
+        //     if (this.txtNo1 === "") {
+        //         this.convertedText = "Insert Text";
+        //     } else {
+        //         let words = this.txtNo1.split(' ');
+        //         let char = [];
+        //         for (let i = 0; i < words.length; i++) {
+        //             char[i] = words[i].split('').join("@");
+        //         }
+        //         this.convertedText = char.join(" ");
+        //     }
+        // },
         change() {
             this.numberChanged = [];
             let hasil = 0;
@@ -165,5 +165,19 @@ export default {
             });
         }
     },
+    computed: {
+        convertText() {
+            if (this.txtNo1 === "") {
+                this.convertedText = "Insert Text";
+            } else {
+                let words = this.txtNo1.split(' ');
+                let char = [];
+                for (let i = 0; i < words.length; i++) {
+                    char[i] = words[i].split('').join("@");
+                }
+                return char.join(" ");
+            }
+        }
+    }
 }
 </script>
